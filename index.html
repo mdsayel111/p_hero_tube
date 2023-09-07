@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-HERO TUBE</title>
+
+    <!-- link favicon -->
+    <link rel="shortcut icon" href="./image/Logo.png" type="image/x-icon">
+
+    <!-- link font awsome -->
+    <script src="https://kit.fontawesome.com/57a00f6fb2.js" crossorigin="anonymous"></script>
+
+    <!-- link disyUi and tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- link external css -->
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- customize tailwind script -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#FF1F3D',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <header>
+        <nav class="flex flex-col space-y-4 md:space-y-0 items-center md:flex-row container mx-auto md:justify-between my-4">
+            <div class="logo order-1 md:order-1">
+                <img src="./image/Logo.png" alt="">
+            </div>
+            <div class="sort-by order-3 md:order-2">
+                <button class="btn bg-[ #25252526] py-1 rounded-lg min-h-0 leading-normal h-fit" onclick="sortByviews()">Sort by view</button>
+            </div>
+            <div class="blog-btn order-2 md:order-3">
+                <a href="./html/blog.html"><button class="btn bg-primary py-1 rounded-lg min-h-0 leading-normal h-fit">Blog</button></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto">
+      <section>
+        <div id="catagorys" class="catagorys flex w-[60%] mx-auto gap-4 justify-center my-8"></div>
+      </section>
+      <section>
+        <div id="contents" class="contents-container gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4"></div>
+      </section>
+    </main>
+
+    <!-- link external js -->
+    <script src="./js/index.js"></script>
+</body>
+</html>

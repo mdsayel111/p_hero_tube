@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG</title>
+
+    <!-- link favicon -->
+    <link rel="shortcut icon" href="../image/Logo.png" type="image/x-icon">
+
+    <!-- link font awsome -->
+    <script src="https://kit.fontawesome.com/57a00f6fb2.js" crossorigin="anonymous"></script>
+
+    <!-- link disyUi and tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- link external css -->
+    <link rel="stylesheet" href="../css/index.css">
+
+    <!-- customize tailwind script -->
+    <script>
+        tailwind.config = {
+            theme: {
+            extend: {
+                colors: {
+                primary: '#FF1F3D',
+                }
+            }
+            }
+        }
+        </script>
+</head>
+<body>
+    <header>
+        <nav class="flex container mx-auto justify-between my-4">
+            <div class="logo">
+                <img src="../image/Logo.png" alt="">
+            </div>
+            <div class="blog-btn">
+                <a href="../index.html"><button class="btn bg-primary py-1 rounded-lg min-h-0 leading-normal h-fit">home</button></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="flex">
+            <div class="join join-vertical w-[80%] md:w-[60%] mx-auto">
+                <div class="collapse collapse-arrow join-item border border-base-300">
+                  <input type="radio" name="my-accordion-4" checked="checked" /> 
+                  <div class="collapse-title text-xl font-medium text-primary">
+                    Discuss the scope of var, let, and const.
+                  </div>
+                  <div class="collapse-content flex"> 
+                    <h3 class="font-bold">Ans&nbsp:&nbsp</h3><p>Variables declared with var are in the function scope. Variables declared as let are in the block scope. Variables declared as const are in the block scope.</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border border-base-300">
+                  <input type="radio" name="my-accordion-4" /> 
+                  <div class="collapse-title text-xl font-medium text-primary">
+                    Tell us the use cases of null and undefined.
+                  </div>
+                  <div class="collapse-content flex"> 
+                    <h3 class="font-bold">Ans&nbsp:&nbsp</h3><p>Undefined means the variable has been declared, but its value has not been assigned. Null means an empty value or a blank value.</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border border-base-300">
+                  <input type="radio" name="my-accordion-4" /> 
+                  <div class="collapse-title text-xl font-medium text-primary">
+                    What do you mean by REST API?
+                  </div>
+                  <div class="collapse-content flex"> 
+                    <h3 class="font-bold">Ans&nbsp:&nbsp</h3>
+                    <p>An API, or application programming interface, is a set of rules that define how applications or devices can connect to and communicate with each other. A REST API is an API that conforms to the design principles of the REST, or representational state transfer architectural style.</p>
+                  </div>
+                </div>
+              </div>
+        </section>
+    </main>
+</body>
+</html>
